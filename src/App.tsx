@@ -23,6 +23,7 @@ import { CompareModal } from './components/CompareModal';
 import { SearchOverlay } from './components/SearchOverlay';
 import { ToastContainer } from './components/Toast';
 import { BackToTop } from './components/BackToTop';
+import { NovaChatbot } from './components/NovaChatbot';
 import { Product, Order } from './types';
 
 const MainContent: React.FC = () => {
@@ -163,6 +164,7 @@ const MainContent: React.FC = () => {
 
       <ToastContainer />
       <BackToTop />
+      <NovaChatbot onSelectProduct={handleSelectProduct} />
 
     </div>
   );
